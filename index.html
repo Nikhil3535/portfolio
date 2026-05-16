@@ -1,460 +1,412 @@
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-bg">
-        <div class="hero-particles"></div>
-        <div class="hero-gradient"></div>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Nikhil P | Cloud & DevOps Engineer Portfolio" />
+
+    <title>Nikhil P | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap"><div class="loader-line"></div></div>
+                <div class="loader-line-wrap"><div class="loader-line"></div></div>
+                <div class="loader-line-wrap"><div class="loader-line"></div></div>
+                <div class="loader-line-wrap"><div class="loader-line"></div></div>
+                <div class="loader-line-wrap"><div class="loader-line"></div></div>
+            </div>
+        </div>
+        <p>Loading Portfolio...</p>
     </div>
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for opportunities
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Hi, I'm</span>
-                <span class="title-name">Nikhil P</span>
-                <span class="title-role">Cloud & DevOps Engineer</span>
-            </h1>
-            <p class="hero-description">
-                Aspiring Cloud and DevOps Engineer with hands-on experience in AWS, Docker,
-                Kubernetes (EKS), and serverless architectures. Passionate about building
-                scalable cloud-native applications and automating deployments using CI/CD practices.
-            </p>
 
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">AWS</span>
-                    <span class="stat-label">Cloud Skills</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2+</span>
-                    <span class="stat-label">Major Projects</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">CCNA</span>
-                    <span class="stat-label">Certified</span>
-                </div>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <div class="logo-icon">NP</div>
+                <span class="logo-text">Nikhil P</span>
+            </a>
+
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
 
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Get In Touch</span>
-                    <div class="btn-arrow">→</div>
-                </a>
+        </div>
+    </nav>
 
-                <a href="#projects" class="btn btn-secondary">
-                    <span>View Projects</span>
-                </a>
-            </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-bg">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
         </div>
 
-        <div class="hero-visual">
-            <div class="profile-container">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <div class="profile-avatar">
-                            <img src="images/user.png" alt="Profile" />
-                        </div>
-                        <div class="profile-ring"></div>
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Open to Opportunities
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-name">Nikhil P</span>
+                    <span class="title-role">Cloud & DevOps Engineer</span>
+                </h1>
+
+                <p class="hero-description">
+                    Aspiring Cloud and DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes (EKS), and CI/CD pipelines. Passionate about building scalable cloud-native applications and infrastructure automation.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Projects</span>
                     </div>
 
-                    <div class="profile-info">
-                        <h3>Cloud & DevOps Engineer</h3>
-                        <p>AWS | Docker | Kubernetes</p>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
 
-                        <div class="profile-status">
-                            <div class="status-dot"></div>
-                            <span>Available</span>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number">AWS</span>
+                        <span class="stat-label">Cloud Skills</span>
                     </div>
                 </div>
 
-                <div class="floating-cards">
-                    <div class="float-card card-1">
-                        <div class="card-icon">☁️</div>
-                        <span>AWS</span>
-                    </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                    </a>
 
-                    <div class="float-card card-2">
-                        <div class="card-icon">🐳</div>
-                        <span>Docker</span>
-                    </div>
-
-                    <div class="float-card card-3">
-                        <div class="card-icon">⚙️</div>
-                        <span>Kubernetes</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Get to know me</span>
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">
-                Passionate about cloud computing, DevOps automation, and scalable infrastructure
-            </p>
-        </div>
-
-        <div class="about-content">
-            <div class="about-text">
-
-                <div class="text-block">
-                    <h3>Professional Summary</h3>
-                    <p>
-                        Aspiring Cloud and DevOps Engineer with practical experience in AWS,
-                        Docker, Kubernetes (EKS), and CI/CD pipelines. Skilled in developing
-                        scalable cloud-native applications and implementing automation workflows.
-                    </p>
-                </div>
-
-                <div class="text-block">
-                    <h3>Technical Expertise</h3>
-                    <p>
-                        Experienced in AWS cloud services including Lambda, S3, RDS, API Gateway,
-                        IAM, and EKS. Strong understanding of containerization, orchestration,
-                        and deployment automation using Docker and Kubernetes.
-                    </p>
-                </div>
-
-                <div class="text-block">
-                    <h3>Career Objective</h3>
-                    <p>
-                        Seeking opportunities to contribute to modern cloud infrastructure,
-                        DevOps automation, and scalable application deployments while
-                        continuously learning emerging technologies.
-                    </p>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
                 </div>
 
             </div>
 
-            <div class="skills-section">
-                <div class="skills-grid">
+            <!-- Profile -->
+            <div class="hero-visual">
+                <div class="profile-container">
 
-                    <div class="skill-category">
-                        <h4>☁️ Cloud Technologies</h4>
-                        <div class="skill-list">
-                            <span class="skill-item">AWS Lambda</span>
-                            <span class="skill-item">Amazon S3</span>
-                            <span class="skill-item">Amazon RDS</span>
-                            <span class="skill-item">Amazon EKS</span>
-                            <span class="skill-item">API Gateway</span>
-                            <span class="skill-item">IAM</span>
-                            <span class="skill-item">CloudWatch</span>
+                    <div class="profile-card">
+
+                        <div class="profile-image">
+                            <div class="profile-avatar">
+                                <img src="assets/profile.jpg" alt="Nikhil P">
+                            </div>
+
+                            <div class="profile-ring"></div>
                         </div>
-                    </div>
 
-                    <div class="skill-category">
-                        <h4>🛠️ DevOps Tools</h4>
-                        <div class="skill-list">
-                            <span class="skill-item">Docker</span>
-                            <span class="skill-item">Kubernetes</span>
-                            <span class="skill-item">Argo CD</span>
-                            <span class="skill-item">CI/CD</span>
-                            <span class="skill-item">Git</span>
-                            <span class="skill-item">Linux</span>
-                        </div>
-                    </div>
+                        <div class="profile-info">
+                            <h3>Nikhil P</h3>
+                            <p>Cloud & DevOps Engineer</p>
 
-                    <div class="skill-category">
-                        <h4>🌐 Networking</h4>
-                        <div class="skill-list">
-                            <span class="skill-item">TCP/IP</span>
-                            <span class="skill-item">DNS</span>
-                            <span class="skill-item">DHCP</span>
-                            <span class="skill-item">Routing Protocols</span>
-                            <span class="skill-item">CCNA</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>💻 Programming</h4>
-                        <div class="skill-list">
-                            <span class="skill-item">Python</span>
-                            <span class="skill-item">C</span>
-                            <span class="skill-item">Embedded Systems</span>
-                            <span class="skill-item">IoT</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="certifications">
-                    <h4>🏆 Certifications</h4>
-
-                    <div class="cert-card">
-                        <div class="cert-icon">🎖️</div>
-                        <div class="cert-info">
-                            <h5>Cisco Certified Network Associate (CCNA)</h5>
-                            <p>Cisco</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <div class="cert-icon">☁️</div>
-                        <div class="cert-info">
-                            <h5>AWS Cloud Practitioner Essentials</h5>
-                            <p>Amazon Web Services</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="experience">
-    <div class="container">
-
-        <div class="section-header">
-            <span class="section-tag">Experience</span>
-            <h2 class="section-title">Professional Experience</h2>
-            <p class="section-subtitle">
-                Internships and practical exposure in networking and embedded systems
-            </p>
-        </div>
-
-        <div class="timeline">
-
-            <!-- Experience 1 -->
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
-                </div>
-
-                <div class="timeline-content">
-                    <div class="experience-card">
-
-                        <div class="card-header">
-                            <div class="company-info">
-                                <h3>Network Engineer Intern</h3>
-                                <h4>Alpha Tech Academy</h4>
-
-                                <div class="duration">
-                                    <span class="date">Feb 2025 – May 2025</span>
-                                    <span class="location">📍 Bangalore</span>
-                                </div>
+                            <div class="profile-status">
+                                <span class="status-dot"></span>
+                                Available for Work
                             </div>
                         </div>
 
-                        <p class="role-description">
-                            Worked on networking concepts, infrastructure configuration,
-                            and troubleshooting with practical CCNA-based implementations.
-                        </p>
-
-                        <div class="tech-stack">
-                            <span class="tech-tag">Networking</span>
-                            <span class="tech-tag">TCP/IP</span>
-                            <span class="tech-tag">DNS</span>
-                            <span class="tech-tag">CCNA</span>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
 
-            <!-- Experience 2 -->
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                    <div class="marker-line"></div>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Professional Summary</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <div class="text-block">
+                        <h3>Who I Am</h3>
+
+                        <p>
+                            I am an aspiring Cloud and DevOps Engineer with strong knowledge in AWS cloud services, Docker, Kubernetes, and networking concepts. I enjoy designing scalable cloud-native applications and automating deployment workflows.
+                        </p>
+                    </div>
+
+                    <div class="text-block">
+                        <h3>What I Do</h3>
+
+                        <p>
+                            I work on cloud infrastructure, serverless applications, CI/CD pipelines, container orchestration, and DevOps automation using modern cloud technologies.
+                        </p>
+                    </div>
+
                 </div>
 
-                <div class="timeline-content">
-                    <div class="experience-card">
+                <!-- Skills -->
+                <div class="skills-section">
 
-                        <div class="card-header">
-                            <div class="company-info">
-                                <h3>Embedded Engineer Intern</h3>
-                                <h4>Loginware Softtec Pvt. Ltd.</h4>
+                    <div class="skills-grid">
 
-                                <div class="duration">
-                                    <span class="date">Sep 2024 – Nov 2024</span>
-                                    <span class="location">📍 Bangalore</span>
-                                </div>
+                        <div class="skill-category">
+                            <h4>☁ Cloud</h4>
+
+                            <div class="skill-list">
+                                <span class="skill-item aws">AWS</span>
+                                <span class="skill-item">Lambda</span>
+                                <span class="skill-item">S3</span>
+                                <span class="skill-item">RDS</span>
+                                <span class="skill-item">EKS</span>
+                                <span class="skill-item">IAM</span>
+                                <span class="skill-item">CloudWatch</span>
                             </div>
                         </div>
 
-                        <p class="role-description">
-                            Worked on embedded system applications and hardware-software integration.
-                        </p>
+                        <div class="skill-category">
+                            <h4>⚙ DevOps</h4>
 
-                        <div class="tech-stack">
-                            <span class="tech-tag">Embedded Systems</span>
-                            <span class="tech-tag">C Programming</span>
-                            <span class="tech-tag">IoT</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience 3 -->
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="marker-dot"></div>
-                </div>
-
-                <div class="timeline-content">
-                    <div class="experience-card">
-
-                        <div class="card-header">
-                            <div class="company-info">
-                                <h3>Embedded Systems & IoT Intern</h3>
-                                <h4>Devminds</h4>
-
-                                <div class="duration">
-                                    <span class="date">Oct 2023 – Nov 2023</span>
-                                    <span class="location">📍 Bangalore</span>
-                                </div>
+                            <div class="skill-list">
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Kubernetes</span>
+                                <span class="skill-item">Argo CD</span>
+                                <span class="skill-item">CI/CD</span>
+                                <span class="skill-item">Git</span>
+                                <span class="skill-item">Linux</span>
                             </div>
                         </div>
 
-                        <p class="role-description">
-                            Worked on IoT-based automation projects and developed
-                            hands-on embedded system applications.
-                        </p>
+                        <div class="skill-category">
+                            <h4>🌐 Networking</h4>
 
-                        <div class="tech-stack">
-                            <span class="tech-tag">IoT</span>
-                            <span class="tech-tag">Automation</span>
-                            <span class="tech-tag">Embedded Systems</span>
+                            <div class="skill-list">
+                                <span class="skill-item">TCP/IP</span>
+                                <span class="skill-item">DNS</span>
+                                <span class="skill-item">DHCP</span>
+                                <span class="skill-item">Routing</span>
+                                <span class="skill-item">CCNA</span>
+                            </div>
                         </div>
 
                     </div>
+
+                    <div class="certifications">
+
+                        <h4>🏆 Certifications</h4>
+
+                        <div class="cert-card">
+                            <div class="cert-info">
+                                <h5>Cisco Certified Network Associate (CCNA)</h5>
+                                <p>AWS Cloud Practitioner Essentials</p>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
-    </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
+    </section>
 
-        <div class="section-header">
-            <span class="section-tag">Projects</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">
-                Cloud-native and DevOps focused applications
-            </p>
-        </div>
+    <!-- Experience -->
+    <section id="experience" class="experience">
 
-        <div class="projects-grid">
+        <div class="container">
 
-            <!-- Project 1 -->
-            <div class="project-card featured">
-
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <div class="project-icon">🔊</div>
-                        <h4>Serverless Web App</h4>
-                        <p>Text-to-Audio Application</p>
-                    </div>
-                </div>
-
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Text-to-Audio Web Application</h3>
-                        <div class="project-status">Featured</div>
-                    </div>
-
-                    <p>
-                        Developed a serverless Text-to-Audio application using AWS Lambda and S3.
-                        Implemented backend processing for converting text into speech with scalable
-                        cloud-native architecture.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>AWS Lambda</span>
-                        <span>S3</span>
-                        <span>API Gateway</span>
-                        <span>Serverless</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Nikhil3535" target="_blank" class="project-link">
-                            <span>View Details</span>
-                            <div class="link-arrow">→</div>
-                        </a>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Internships</h2>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
+            <div class="timeline">
 
-                <div class="project-image">
-                    <div class="project-overlay">
-                        <div class="project-icon">🐳</div>
-                        <h4>Cloud Native App</h4>
-                        <p>Dockerized EKS Deployment</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+
+                    <div class="timeline-content">
+                        <div class="experience-card">
+
+                            <div class="card-header">
+
+                                <div class="company-info">
+                                    <h3>Alpha Tech Academy</h3>
+                                    <h4>Network Engineer Intern</h4>
+
+                                    <div class="duration">
+                                        <span class="date">Feb 2025 – May 2025</span>
+                                        <span class="location">Bangalore</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Employee Management System</h3>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
                     </div>
 
-                    <p>
-                        Developed a full-stack Employee Management System with CRUD functionality,
-                        Dockerized deployment, AWS EKS orchestration, RDS integration, and CI/CD automation.
-                    </p>
+                    <div class="timeline-content">
+                        <div class="experience-card">
 
-                    <div class="project-tech">
-                        <span>Docker</span>
-                        <span>Kubernetes</span>
-                        <span>AWS EKS</span>
-                        <span>RDS</span>
-                        <span>CI/CD</span>
-                    </div>
+                            <div class="card-header">
 
-                    <div class="project-links">
-                        <a href="https://github.com/Nikhil3535" target="_blank" class="project-link">
-                            <span>View Details</span>
-                            <div class="link-arrow">→</div>
-                        </a>
+                                <div class="company-info">
+                                    <h3>Loginware Softtec Pvt. Ltd.</h3>
+                                    <h4>Embedded Engineer Intern</h4>
+
+                                    <div class="duration">
+                                        <span class="date">Sep 2024 – Nov 2024</span>
+                                        <span class="location">Bangalore</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
-    </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
+    </section>
 
-        <div class="section-header">
-            <span class="section-tag">Let's Connect</span>
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">
-                Open to internships and cloud/devops opportunities
-            </p>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">🎙</div>
+                            <h4>Text-to-Audio Web App</h4>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h3>Serverless AWS Application</h3>
+                        </div>
+
+                        <p>
+                            Developed a Text-to-Audio web application using AWS Lambda and S3 with scalable backend processing and real-time audio generation.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>S3</span>
+                            <span>Serverless</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">⚡</div>
+                            <h4>Employee Management System</h4>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h3>Dockerized Full Stack App</h3>
+                        </div>
+
+                        <p>
+                            Built a containerized Employee Management System deployed on AWS EKS with Docker, RDS, and CI/CD pipeline automation.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>AWS EKS</span>
+                            <span>CI/CD</span>
+                            <span>RDS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="contact-content">
+    </section>
 
-            <div class="contact-info">
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+
+            <div class="contact-content">
+
                 <div class="contact-card">
 
-                    <h3>Let's work together</h3>
-
-                    <p>
-                        Interested in Cloud, DevOps, and Infrastructure Automation opportunities.
-                        Feel free to connect with me.
-                    </p>
+                    <h3>Get In Touch</h3>
 
                     <div class="contact-methods">
 
@@ -463,9 +415,7 @@
 
                             <div class="method-info">
                                 <span class="method-label">Email</span>
-                                <a href="mailto:nikhilhntr@gmail.com">
-                                    nikhilhntr@gmail.com
-                                </a>
+                                <a href="mailto:nikhilhntr@gmail.com">nikhilhntr@gmail.com</a>
                             </div>
                         </div>
 
@@ -474,92 +424,78 @@
 
                             <div class="method-info">
                                 <span class="method-label">Phone</span>
-                                <a href="tel:+916363658520">
-                                    +91 6363658520
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">📍</div>
-
-                            <div class="method-info">
-                                <span class="method-label">Location</span>
-                                <span>Bangalore, Karnataka</span>
+                                <span>+91 6363658520</span>
                             </div>
                         </div>
 
                     </div>
 
                     <div class="social-links">
+                        <a href="https://github.com/Nikhil3535" class="social-link" target="_blank">GitHub</a>
 
-                        <a href="https://linkedin.com/in/nikhil-p-469476250"
-                           class="social-link linkedin"
-                           target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-
-                        <a href="https://github.com/Nikhil3535/"
-                           class="social-link github"
-                           target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-
+                        <a href="https://linkedin.com/in/nikhil-p-469476250" class="social-link" target="_blank">LinkedIn</a>
                     </div>
 
                 </div>
-            </div>
 
-        </div>
-    </div>
-</section>
+                <!-- Contact Form -->
+                <div class="contact-form-container">
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div class="footer-left">
-                <div class="footer-logo">
-                    <div class="logo-icon">
-                        <span>N</span>
+                    <div class="form-header">
+                        <h3>Send Message</h3>
                     </div>
 
-                    <span>Nikhil P</span>
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
                 </div>
 
-                <p>
-                    Cloud & DevOps Engineer passionate about automation and scalable infrastructure.
-                </p>
             </div>
 
-            <div class="footer-links">
+        </div>
 
-                <div class="link-group">
-                    <h4>Navigation</h4>
+    </section>
 
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
 
-                <div class="link-group">
-                    <h4>Connect</h4>
+        <div class="container">
 
-                    <a href="https://linkedin.com/in/nikhil-p-469476250">LinkedIn</a>
-                    <a href="https://github.com/Nikhil3535/">GitHub</a>
-                    <a href="mailto:nikhilhntr@gmail.com">Email</a>
-                </div>
-
+            <div class="footer-bottom">
+                <p>© 2026 Nikhil P. All Rights Reserved.</p>
             </div>
+
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nikhil P. All rights reserved.</p>
-        </div>
+    </footer>
 
-    </div>
-</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
