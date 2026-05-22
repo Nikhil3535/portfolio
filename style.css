@@ -1696,3 +1696,15 @@ section {
     background: #2563eb;
     transform: translateY(-2px);
 }
+/* White Clickable Project Titles */
+
+.project-title-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-title-link:hover {
+    color: #667eea;
+    text-decoration: none;
+}
