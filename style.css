@@ -1671,3 +1671,28 @@ section {
     background: rgba(102, 126, 234, 0.3);
     color: #ffffff;
 }
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: white;
+    background: #1f2937;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
